@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#49A4EC"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/date_ent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="DD/MM/YYYY"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/find_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/find_btn"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="#38D140"
+        android:text="@string/let_s_find"
+        android:textColor="#FAF8F7F2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/date_ent"
+        app:layout_constraintStart_toStartOf="@+id/date_ent"
+        app:layout_constraintTop_toBottomOf="@+id/date_ent" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="206dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="248dp"
+        android:background="#E2B326"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FCF6F8"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/find_btn"
+        app:layout_constraintStart_toStartOf="@+id/find_btn"
+        app:layout_constraintTop_toBottomOf="@+id/find_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
